@@ -22,6 +22,8 @@ a {
   font-size: 1.2rem;
 }
 
+/* Header */
+
 .logo img {
   width: 150px;
 }
@@ -35,4 +37,35 @@ nav a {
 nav a:hover {
   color: green;
   border-bottom: 5px solid green;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #54565a;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList,
+.navList ul li a {
+  color: #fff;
+  font-weight: 300;
+}
+
+.navList h6 {
+  font-weight: 700;
+}
+
+.navList ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+.navList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navList ul li {
+  margin-bottom: 0.5rem;
 }
