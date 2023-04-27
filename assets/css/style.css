@@ -906,3 +906,111 @@ nav a:hover {
   font-size: 2rem;
   font-weight: 700;
 }
+
+/* menu */
+.fa-bars {
+  display: none;
+  font-size: 2rem;
+  color: #006580;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: -200%;
+    background-color: #fff;
+    height: 100%;
+    padding: 20% 20% 20% 10%;
+    flex-direction: column;
+    transition: 0.6s;
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  nav a {
+    font-size: 2rem;
+  }
+
+  .banner,
+  .visual {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .banner2 {
+    flex-direction: column;
+  }
+
+  .literacy {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  #passive {
+    flex-direction: column !important;
+    gap: 3rem;
+  }
+
+  .banner3 ul {
+    padding: 0;
+  }
+
+  .visualContent {
+    padding: 0;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .banner3 ul {
+    flex-wrap: wrap;
+  }
+
+  .banner3 ul li {
+    border: none;
+  }
+
+  .singleCloud h3 {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  .singleCloud .deck {
+    justify-content: center;
+  }
+
+  .singleCloud .deck .cards {
+    width: 140px;
+  }
+
+  .banner4 {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 1rem;
+  }
+
+  .footer {
+    gap: 2rem;
+  }
+
+  .navList {
+    flex: none;
+  }
+
+  .additional {
+    flex-direction: column !important;
+    gap: 4rem !important;
+  }
+
+  .rightNav {
+    display: none !important;
+  }
+}
